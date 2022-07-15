@@ -1,0 +1,46 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Converter</title>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnoNVTrcFb9RestTF1XP6YHim14lw9dfs&callback=initMap&v=weekly" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="glass-container" id="converter">
+            <div class="converter-container">
+                <h1>Coordinates</h1>       
+                <div class="input-group">
+                    <label>LATITUDE</label> 
+                    <p id="in3"></p>
+                </div>
+                <div class="input-group">
+                    <label>LONGITUDE</label>
+                    <p id="in4"></p>
+                </div>
+                <div class="input-group">
+                    <label>W3W</label> 
+                    <p id="padd"></p>
+                </div>
+            </div>
+            <div id = "footer-inputs">
+                <label for="W3WLanguage">W3W Language</label>
+                <div class="custom-select-opaque custom-select">
+                    <select id="W3WLanguage">
+                        <option value="it">italiano</option>
+                        <option value="en">english</option>
+                        <option value="fr">francais</option>
+                        <option value="de">deutsch</option>
+                        <option value="es">espanol</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="glass-container" id="chart-container">
+            <div id="map" style="height: 100%; width: 100%"></div>
+        </div>  
+
+        <script src="https://assets.what3words.com/sdk/v3/what3words.js?key=UPOVZCB4"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script src="pcto.js"></script>
+    </body>
+</html>

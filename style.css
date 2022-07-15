@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+body {
+
+    background: linear-gradient(-45deg, #003E7E 0%, #0072b4 100%);
+    color: #fafafa;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    margin: 0;
+
+}
+
+.glass-container {
+
+    margin: 25px;
+    background: rgba(250, 250, 250, 0.3);
+    border-radius: 25px;
+    padding: 25px;
+    border: 1px solid rgba(250, 250, 250, 0.3);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+
+}
+
+h1 {
+
+    margin: 0;
+
+}
+
+#converter {
+
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+#converter h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.input-group {
+
+    width: 100%;
+    margin: 10px 0;
+
+}
+
+.input-group  label {
+
+    display: block;
+    font-weight: bold;
+
+}
+
+#chart-container {
+
+    width: 100%;
+    padding: 15px;
+
+}
+
+.converter-container {
+    width: 100%;
+    word-wrap: break-word;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance:none;
+    background-color: transparent;
+    border: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+    height: 30px;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+    font-size: 14px;
+    padding-right: 30px;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .70em auto, 100%;
+}
+
+.custom-select {
+
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+
+}
+
+.custom-select-glass {
+
+    background: rgba(250, 250, 250, 0.3);
+    border: 1px solid rgba(250, 250, 250, 0.3);
+
+}
+
+.custom-select-glass select {
+    color: #fafafa;
+}
+
+.custom-select-opaque {
+
+    background: white;
+    background-color: lightblue;
+    color: #333333;
+    width: 100%;
+
+}
+.input-group p{
+  color: black;
+  border: 1px solid rgba(250, 250, 250, 0.3);
+  border-radius: 10px;
+  padding: 5px;
+  min-height: 38px;
+  background-color: lightblue;
+}
+
+.custom-select-opaque select {
+
+    color: #333333;
+
+}
+
+#footer-inputs {
+    width: 100%;
+    font-weight: bold;
+}
+
+#closeOverlay {
+
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+#map {
+    height: 100%;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+  select::-ms-expand {
+    display: none;
+  }
