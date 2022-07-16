@@ -71,12 +71,7 @@ function initMap() {
     document.getElementById("padd").innerHTML = "";    
     what3words.api.convertTo3wa({lat:latitude, lng:longitude}, conversationLanguage).then(function(response) {
     let words = response.words;
-    tag.innerHTML = words;}).catch(function(error) {
-    
-    //errori
-    console.log("[code]", error.code);
-    console.log("[message]", error.message);
-    alert("Hai fatto un errore di battitura, riprova");});
+    tag.innerHTML = words;});
   }
 
   let language = document.getElementById("W3WLanguage");
